@@ -1,27 +1,6 @@
-import { useRouter } from 'expo-router';
-import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-export default function HomeScreen() {
-  const router = useRouter();
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>🌎 Bem-vindo ao Eco Dicas!</Text>
-      <Text style={styles.subtitle}>Descubra como salvar o meio ambiente pouco a pouco.</Text>
-      <View style={styles.buttonsContainer}>
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/(tabs)/meio-ambiente')}>
-          <Text style={styles.buttonText}>Dicas para Salvar o Meio Ambiente</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.sectionButton} onPress={() => router.push('/(tabs)/explore')}>
-          <Text style={styles.sectionButtonText}>Saiba como Reciclar</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -76,3 +55,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+

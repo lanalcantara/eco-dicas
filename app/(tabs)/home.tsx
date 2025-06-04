@@ -10,12 +10,13 @@ export default function HomeScreen() {
       <Text style={styles.title}>🌎 Bem-vindo ao Eco Dicas!</Text>
       <Text style={styles.subtitle}>Descubra como salvar o meio ambiente pouco a pouco.</Text>
       <View style={styles.buttonsContainer}>
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/(tabs)/meio-ambiente')}>
-          <Text style={styles.buttonText}>Dicas para Salvar o Meio Ambiente</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.sectionButton} onPress={() => router.push('/(tabs)/explore')}>
+        <TouchableOpacity style={styles.sectionButton} onPress={() => router.push('/explore')}>
           <Text style={styles.sectionButtonText}>Saiba como Reciclar</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.sectionButton} onPress={() => router.push('/dicas')}>
+          <Text style={styles.sectionButtonText}>Como Ajudar o Meio Ambiente</Text>
+        </TouchableOpacity>
+       
       </View>
     </View>
   );

@@ -28,7 +28,7 @@ export default function ReciclagemScreen() {
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <Text style={styles.title}>♻️ Saiba como Reciclar</Text>
-      <Text style={styles.sectionTitle}>Frases Inspiradoras</Text>
+    
       {frasesReciclagem.map((frase, idx) => (
         <Text style={styles.frase} key={idx}>
           “{frase}”
